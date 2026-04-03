@@ -8,15 +8,28 @@
 </head>
 <body>
     <div class="container">
-        <div class="model">
+        <div class="model" id="loginForm">
                 <h1>Login</h1>
                 <p>Username</p>
                 <input type="text" id="username">
                 <p>Password</p>
                 <input type="password" id="password">
-                <button>Login</button>
-                <span onclick="">Criar conta</span>
+                <button class="login-accont">Login</button>
+                <span onclick="showCreate()">Criar conta</span>
+        </div>
+        <div class="create hidden" id="createForm">
+            <h1>Create</h1>
+            <p>Username</p>
+            <input type="text" id="username">
+            <p>Email</p>
+            <input type="email" id="email">
+            <p>Password</p>
+            <input type="password" id="password">
+            <button class="create-accont">Criar Conta</button>
+            <span onclick="showLogin()">Entrar</span>
+
         </div>
     </div>
 </body>
+<script src="index.js"></script>
 </html>
